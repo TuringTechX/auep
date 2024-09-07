@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply antialiased; /* Improved text rendering */
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700; /* Default link styling */
+}
