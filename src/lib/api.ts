@@ -1,3 +1,15 @@
+// src/lib/api.ts
+export async function getVisaStatus() {
+  const response = await fetch('/api/visa-status');
+  return await response.json();
+}
+
+export async function getTravelFeed() {
+  const response = await fetch('/api/travel-feed');
+  return await response.json();
+}
+
+
 // lib/api.ts
 export const fetchCrowdfundingProjects = async () => {
   try {
