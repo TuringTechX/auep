@@ -97,6 +97,25 @@ export const fetchStudentProfile = async (userId: string) => {
 };
 
 // src/lib/api.ts
+
+export async function fetchReferendums() {
+  // Simulate fetching data from the blockchain or API
+  return [
+      { id: 1, title: 'Referendum on Climate Action', description: 'Vote for the new climate action policies.', status: 'ongoing' },
+      { id: 2, title: 'Economic Reform Proposal', description: 'Vote on the economic reform for sustainable growth.', status: 'completed' },
+  ];
+}
+
+export async function fetchVotingData() {
+  // Simulate fetching vote data
+  return [
+      { id: 1, issue: 'Climate Action', percentage: 75 },
+      { id: 2, issue: 'Economic Reform', percentage: 60 },
+  ];
+}
+
+
+// src/lib/api.ts
 export const markModuleComplete = async (userId: string, courseId: string, moduleId: string) => {
   try {
     const res = await fetch('https://api.example.com/mark-module-complete', {
